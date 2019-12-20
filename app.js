@@ -140,6 +140,15 @@ function clearTasks() {
     while (taskList.firstChild) {
         taskList.removeChild(taskList.firstChild);
     }
+
+    // Clear from LS
+    clearTasksFromLocalStorage();
+}
+
+
+// Clear Tasks From LS
+function clearTasksFromLocalStorage() {
+    localStorage.clear();
 }
 
 // Filter Tasks
