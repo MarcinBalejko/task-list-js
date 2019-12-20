@@ -58,3 +58,12 @@ function removeTask(e) {
     }
 }
 
+//Clear Tasks
+function clearTasks() {
+    // taskList.innerHTML = '';   FIRST WAY TO DO THIS
+
+    // FASTER
+    while (taskList.firstChild) {
+        taskList.removeChild(taskList.firstChild);
+    }
+}
